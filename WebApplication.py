@@ -6,4 +6,4 @@ app = create_app()
 #     db.create_all()
 
 if __name__ == '__main__':
-    app.run(host='127.0.0.1', port=5666, debug=True)
+    app.run(debug=True)
