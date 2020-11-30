@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: requests-jwt
+Version: 0.5.3
+Summary: This package allows for HTTP JSON Web Token (JWT) authentication using the requests library.
+Home-page: https://github.com/tgs/requests-jwt
+Author: Thomas Grenfell Smith
+Author-email: thomathom@gmail.com
+License: ISC
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Provides: requests_jwt
+Requires-Dist: requests
+Requires-Dist: PyJWT
+
+This package is not actively maintained and has never had a security audit.
+===========================================================================
+
+requests-jwt
+=============
+
+This package allows for HTTP authentication using `JSON Web Tokens
+<http://self-issued.info/docs/draft-ietf-oauth-json-web-token.html>`_.
+
+.. image:: https://api.travis-ci.org/tgs/requests-jwt.svg
+   :target: https://travis-ci.org/tgs/requests-jwt
+
+.. image:: https://coveralls.io/repos/tgs/requests-jwt/badge.png
+   :target: https://coveralls.io/r/tgs/requests-jwt
+
+Usage
+-----
+
+``JWTAuth`` extends requests ``AuthBase``, so usage is simple:
+
+.. code:: python
+
+    import requests
+    from requests_jwt import JWTAuth
+
+    auth = JWTAuth('secretT0Ken')
+    requests.get("http://jwt-protected.com", auth=auth)
+
+More documentation is available at `Read the Docs <http://requests-jwt.rtfd.org>`_.
+
+Installation
+------------
+
+    pip install requests_jwt
+
+Requirements
+------------
+
+- requests_
+- PyJWT_
+
+.. _requests: https://github.com/kennethreitz/requests/
+.. _PyJWT: https://github.com/progrium/pyjwt
+
+

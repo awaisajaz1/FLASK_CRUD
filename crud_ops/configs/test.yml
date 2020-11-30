@@ -1,0 +1,11 @@
+Development:
+  Databases:
+    Database: odrs_Stream_corporate
+    Host: '192.168.2.225:9092'
+    Port: 'http://192.168.2.225:18081'
+    User: 'http://192.168.2.225:18081'
+    Password: 'http://192.168.2.225:18081'
+  Files:
+    Location:
+      Loc1: 'http://192.168.2.225:18081'
+      Loc2: 'http://192.168.2.225:18081'

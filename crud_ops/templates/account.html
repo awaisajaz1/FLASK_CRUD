@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block body%}
+<div class="content-section">
+  <div class="media">
+    <img class="rounded-circle account-img" src="https://www.shareicon.net/data/128x128/2016/05/24/769983_man_512x512.png">
+    <div class="media-body">
+      <h2 class="account-heading">{{ current_user.username }}</h2>
+      <p class="text-secondary">{{ current_user.email }}</p>
+    </div>
+  </div>
+          <form method="POST", action="">
+              {{ form.hidden_tag() }}
+              <fieldset class="form-group">
+                  <legend class="border-bottom mb-4">Account Information</legend>
+                  <div class="form-group">
+                      {{ form.username.label(class="form-control-label") }}
+                          {% if form.username.errors %}
+                              {{ form.username(class="form-control form-control-lg is-invalid") }}
+                              <div class="invalid-feedback">
+                                  {% for error in form.username.errors %}
+                                      <span>{{ error }}</span>
+                                  {% endfor %}
+                              </div>
+                          {% else %}
+                              {{ form.username(class="form-control form-control-lg") }}
+                          {% endif %}
+                  </div>
+                  <div class="form-group">
+                      {{ form.email.label(class="form-control-label") }}
+                      {% if form.email.errors %}
+                              {{ form.email(class="form-control form-control-lg is-invalid") }}
+                              <div class="invalid-feedback">
+                                  {% for error in form.email.errors %}
+                                      <span>{{ error }}</span>
+                                  {% endfor %}
+                              </div>
+                          {% else %}
+                              {{ form.email(class="form-control form-control-lg") }}
+                          {% endif %}
+                  </div>
+              </fieldset>
+              <hr>
+              <div class="form-group">
+                  {{ form.submit(class="btn-outline-info") }}
+              </div>
+          </form>
+</div>
+{% endblock%}

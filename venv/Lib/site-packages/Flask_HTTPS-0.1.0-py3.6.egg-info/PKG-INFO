@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: Flask-HTTPS
+Version: 0.1.0
+Summary: Make HTTPS required on any Flask app
+Home-page: https://github.com/onenameio/flask-https
+Author: Onename
+Author-email: hello@onename.com
+License: MIT
+Description: UNKNOWN
+Keywords: https ssl tls
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Student Enrollment Update</title>
+{% endblock%}
+
+{% block body%}
+
+<table border = 10>
+    {% for k, v in dict.items() %}
+    <tr>
+        <th>{{ k }}</th>
+        <td>{{ v }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock%}
