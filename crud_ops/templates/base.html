@@ -21,18 +21,18 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarToggle">
             <div class="navbar-nav mr-auto">
-              <a class="nav-item nav-link" href="http://localhost:5666/home">Home</a>
+              <a class="nav-item nav-link" href="http://localhost:5000/home">Home</a>
               <a class="nav-item nav-link" href="">About</a>
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
                 {% if current_user.is_authenticated %}
-                <a class="nav-item nav-link" href="http://localhost:5666/post/new">New Post</a>
-                  <a class="nav-item nav-link" href="http://localhost:5666/logout">Logout</a>
-                  <a class="nav-item nav-link" href="http://localhost:5666/account">Account</a>
+                <a class="nav-item nav-link" href="http://localhost:5000/post/new">New Post</a>
+                  <a class="nav-item nav-link" href="http://localhost:5000/logout">Logout</a>
+                  <a class="nav-item nav-link" href="http://localhost:5000/account">Account</a>
                 {% else %}
-                  <a class="nav-item nav-link" href="http://localhost:5666/login">Login</a>
-                  <a class="nav-item nav-link" href="http://localhost:5666/register">Register</a>
+                  <a class="nav-item nav-link" href="http://localhost:5000/login">Login</a>
+                  <a class="nav-item nav-link" href="http://localhost:5000/register">Register</a>
                 {% endif %}
             </div>
           </div>

@@ -1,0 +1,17 @@
+#set environment variable in windows cmd
+    export SECRET_KEY=iamtoosecret   -> linux
+    
+    set SECRET_KEY='iamtoosecret'      -> windows
+        [Environment]::SetEnvironmentVariable("SECRET_KEY", "iamtoosecret", "Machine")
+        [Environment]::SetEnvironmentVariable("database_user", "root", "Machine")
+        [Environment]::SetEnvironmentVariable("database_pwd", "admin123", "Machine")
+        [Environment]::SetEnvironmentVariable("database", "target", "Machine")
+        echo %SECRET_KEY%
+        set FLASK_APP=hello.py
+        $env:FLASK_APP = "hello.py"
+        flask run
+
+
+
+#pytest
+python -m pytest <filename if any>

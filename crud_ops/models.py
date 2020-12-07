@@ -31,3 +31,9 @@ class Post(db.Model):
         return f"Post('{self.title}','{self.date_posted}')"
 
 
+
+
+class testPosters(db.Model):
+    ids = db.Column(db.Integer, primary_key=True)
+    titles = db.Column(db.String(100), nullable=False)
+
